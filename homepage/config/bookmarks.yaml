@@ -1,0 +1,21 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/bookmarks
+
+- Frequent:
+    - Github:
+        - abbr: 01
+          href: https://github.com
+    - Youtube:
+        - abbr: 02
+          href: https://www.youtube.com
+    - Paragon:
+        - abbr: 03
+          href: https://neibr.clareityiam.net/idp/login
+    - Gmail:
+        - abbr: 04
+          href: https://mail.google.com/mail/u/0/#inbox
+    - Finviz:
+        - abbr: 05
+          href: https://finviz.com/futures.ashx
+

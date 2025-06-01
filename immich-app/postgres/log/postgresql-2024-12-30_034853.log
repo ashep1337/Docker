@@ -1,0 +1,15 @@
+2024-12-30 03:48:53.246 UTC [1] LOG:  starting PostgreSQL 14.10 (Debian 14.10-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2024-12-30 03:48:53.246 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2024-12-30 03:48:53.246 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2024-12-30 03:48:53.247 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2024-12-30 03:48:53.249 UTC [28] LOG:  database system was shut down at 2024-12-30 03:48:34 UTC
+[2024-12-30T03:48:53Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17331".
+[2024-12-30T03:48:53Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17575".
+[2024-12-30T03:48:53Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17331/segments/46ed98f1-37f4-42b1-bf70-10eab435a881".
+2024-12-30 03:48:53.252 UTC [1] LOG:  database system is ready to accept connections
+2024-12-30 03:49:32.368 UTC [70] ERROR:  duplicate key value violates unique constraint "UQ_assets_owner_checksum"
+2024-12-30 03:49:32.368 UTC [70] DETAIL:  Key ("ownerId", checksum)=(aeba3f32-ba7d-4884-98ef-bde17b54c078, \x9562f01cfbf686720756e4b291b53853b025a72a) already exists.
+2024-12-30 03:49:32.368 UTC [70] STATEMENT:  INSERT INTO "assets"("id", "deviceAssetId", "ownerId", "libraryId", "deviceId", "type", "status", "originalPath", "thumbhash", "encodedVideoPath", "createdAt", "updatedAt", "deletedAt", "fileCreatedAt", "localDateTime", "fileModifiedAt", "isFavorite", "isArchived", "isExternal", "isOffline", "checksum", "duration", "isVisible", "livePhotoVideoId", "originalFileName", "sidecarPath", "stackId", "duplicateId") VALUES (DEFAULT, $1, $2, $3, $4, $5, DEFAULT, $6, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, $7, $8, $9, $10, $11, DEFAULT, DEFAULT, $12, $13, $14, DEFAULT, $15, DEFAULT, DEFAULT, DEFAULT) RETURNING "id", "status", "encodedVideoPath", "createdAt", "updatedAt", "deletedAt", "isFavorite", "isArchived", "isExternal", "isOffline", "isVisible"
+2024-12-30 03:50:20.512 UTC [84] ERROR:  duplicate key value violates unique constraint "UQ_assets_owner_checksum"
+2024-12-30 03:50:20.512 UTC [84] DETAIL:  Key ("ownerId", checksum)=(aeba3f32-ba7d-4884-98ef-bde17b54c078, \x9562f01cfbf686720756e4b291b53853b025a72a) already exists.
+2024-12-30 03:50:20.512 UTC [84] STATEMENT:  INSERT INTO "assets"("id", "deviceAssetId", "ownerId", "libraryId", "deviceId", "type", "status", "originalPath", "thumbhash", "encodedVideoPath", "createdAt", "updatedAt", "deletedAt", "fileCreatedAt", "localDateTime", "fileModifiedAt", "isFavorite", "isArchived", "isExternal", "isOffline", "checksum", "duration", "isVisible", "livePhotoVideoId", "originalFileName", "sidecarPath", "stackId", "duplicateId") VALUES (DEFAULT, $1, $2, $3, $4, $5, DEFAULT, $6, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, $7, $8, $9, $10, $11, DEFAULT, DEFAULT, $12, $13, $14, DEFAULT, $15, DEFAULT, DEFAULT, DEFAULT) RETURNING "id", "status", "encodedVideoPath", "createdAt", "updatedAt", "deletedAt", "isFavorite", "isArchived", "isExternal", "isOffline", "isVisible"

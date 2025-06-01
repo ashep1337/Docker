@@ -1,0 +1,14 @@
+2025-05-10 18:23:06.353 UTC [1] LOG:  starting PostgreSQL 14.10 (Debian 14.10-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-05-10 18:23:06.353 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2025-05-10 18:23:06.353 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2025-05-10 18:23:06.356 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2025-05-10 18:23:06.361 UTC [28] LOG:  database system was interrupted; last known up at 2025-05-10 17:48:46 UTC
+[2025-05-10T18:23:06Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17331".
+[2025-05-10T18:23:06Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17575".
+[2025-05-10T18:23:06Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17331/segments/4e55242c-11d2-45d2-a3ec-d7bec0e189de".
+[2025-05-10T18:23:06Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17575/segments/d3a95628-74e0-4162-8a08-fec95f2683e8".
+2025-05-10 18:23:06.732 UTC [28] LOG:  database system was not properly shut down; automatic recovery in progress
+2025-05-10 18:23:06.734 UTC [28] LOG:  redo starts at 0/A2FB6F0
+2025-05-10 18:23:06.734 UTC [28] LOG:  invalid record length at 0/A2FB7D8: wanted 24, got 0
+2025-05-10 18:23:06.734 UTC [28] LOG:  redo done at 0/A2FB7A0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-05-10 18:23:06.760 UTC [1] LOG:  database system is ready to accept connections

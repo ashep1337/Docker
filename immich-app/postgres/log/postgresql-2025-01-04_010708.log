@@ -1,0 +1,17 @@
+2025-01-04 01:07:08.041 UTC [1] LOG:  starting PostgreSQL 14.10 (Debian 14.10-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-01-04 01:07:08.041 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2025-01-04 01:07:08.041 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2025-01-04 01:07:08.044 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2025-01-04 01:07:08.047 UTC [28] LOG:  database system was shut down at 2025-01-04 00:53:18 UTC
+[2025-01-04T01:07:08Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17331".
+[2025-01-04T01:07:08Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17575".
+[2025-01-04T01:07:08Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17331/segments/08401c34-3163-425d-a26a-d4431e5b0cd8".
+2025-01-04 01:07:08.057 UTC [1] LOG:  database system is ready to accept connections
+[2025-01-04T01:07:08Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17575/segments/ee10f39d-cfd9-49d8-aa87-a4b9992a3578".
+2025-01-04 05:39:19.737 UTC [1] LOG:  received fast shutdown request
+2025-01-04 05:39:19.738 UTC [1] LOG:  aborting any active transactions
+2025-01-04 05:39:19.738 UTC [49] FATAL:  terminating connection due to administrator command
+2025-01-04 05:39:19.738 UTC [50] FATAL:  terminating connection due to administrator command
+2025-01-04 05:39:19.740 UTC [1] LOG:  background worker "logical replication launcher" (PID 35) exited with exit code 1
+2025-01-04 05:39:19.741 UTC [30] LOG:  shutting down
+2025-01-04 05:39:19.766 UTC [1] LOG:  database system is shut down

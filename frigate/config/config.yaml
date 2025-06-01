@@ -1,0 +1,93 @@
+mqtt:
+  enabled: false
+
+go2rtc:
+  streams:
+    rtsp_cam: # <- for RTSP streams
+      - rtsp://admin:ashephard1@192.168.1.49:554/cam/realmonitor?channel=1&subtype=0 # <- stream which supports video & aac audio
+      - ffmpeg:rtsp_cam#audio=aac
+    rtsp_cam2: # <- for RTSP streams
+      - rtsp://admin:ashephard1@192.168.1.50:554/cam/realmonitor?channel=1&subtype=0 # <- stream which supports video & aac audio
+      - ffmpeg:rtsp_cam2#audio=aac
+    rtsp_cam3: # <- for RTSP streams
+      - rtsp://admin:ashephard1@192.168.1.194:554/cam/realmonitor?channel=1&subtype=0 # <- stream which supports video & aac audio
+      - ffmpeg:rtsp_cam3#audio=aac      
+record:
+  enabled: true
+  retain:
+    days: 3
+    mode: motion
+  alerts:
+    retain:
+      days: 7
+  detections:
+    retain:
+      days: 7
+
+snapshots:
+  enabled: true
+  retain:
+    default: 30
+
+cameras:
+  Camera_1: # <------ Name the camera
+    enabled: true
+    ffmpeg:
+      output_args:
+        record: preset-record-generic-audio-aac
+      inputs:
+        - path: rtsp://192.168.1.36:8554/rtsp_cam
+          input_args: preset-rtsp-restream
+          roles:
+            - detect
+            - record
+            - audio
+      hwaccel_args: preset-vaapi
+    detect:
+      enabled: true # <---- disable detection until you have a working camera feed
+      width: 2880
+      height: 1620
+    live:
+      stream_name: rtsp_cam
+
+  Camera_2: # <------ Name the camera
+    enabled: true
+    ffmpeg:
+      output_args:
+        record: preset-record-generic-audio-aac
+      inputs:
+        - path: rtsp://192.168.1.36:8554/rtsp_cam2
+          input_args: preset-rtsp-restream
+          roles:
+            - detect
+            - record
+            - audio
+      hwaccel_args: preset-vaapi
+    detect:
+      enabled: false  # <---- disable detection until you have a working camera feed
+      width: 2880
+      height: 1620
+    live:
+      stream_name: rtsp_cam2
+  Camera_3: # <------ Name the camera
+    enabled: true
+    ffmpeg:
+      output_args:
+        record: preset-record-generic-audio-aac
+      inputs:
+        - path: rtsp://192.168.1.36:8554/rtsp_cam3
+          input_args: preset-rtsp-restream
+          roles:
+            - detect
+            - record
+            - audio
+      hwaccel_args: preset-vaapi
+    detect:
+      enabled: false  # <---- disable detection until you have a working camera feed
+      width: 2880
+      height: 1620
+    live:
+      stream_name: rtsp_cam3     
+
+version: 0.15-1
+camera_groups: {}

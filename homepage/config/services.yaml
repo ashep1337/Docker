@@ -1,0 +1,79 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services
+- Services:
+    - Frigate:
+        widget:
+          type: iframe
+          name: Cameras
+          src: http://192.168.1.36:5000/#Camera_1
+          classes: "h-96"
+    - Immich:
+        href: http://192.168.1.36:2283
+        description: Immich Photos
+        icon: immich.png
+    - Plex:
+        href: https://app.plex.tv/desktop/#!/
+        description: Plex TV
+        icon: plex.png
+    - Prowlarr:
+        href: http://100.97.109.94:9696
+        description: Prowlarr
+        icon: https://cdn.jsdelivr.net/gh/selfhst/icons/svg/prowlarr.svg
+    - Nginx:
+        href: http://192.168.1.36:81
+        description: Nginx Proxy Manager
+        icon: nginx.png
+    - Unifi Router:
+        href: https://192.168.1.1/
+        description: Unifi Router
+        icon: unifi.png
+    - Unifi Site Manger:
+        href: https://unifi.ui.com/
+        description: Unifi Network Manager
+        icon: unifi-controller.png
+    - Proxmox:
+        href: https://192.168.1.8:8006
+        description: Proxmox
+        icon: https://cdn.jsdelivr.net/gh/selfhst/icons/svg/proxmox.svg
+    - qBittorrent:
+        href: http://100.97.109.94:8765
+        description: qBittorrent
+        icon: https://cdn.jsdelivr.net/gh/selfhst/icons/svg/qbittorrent.svg
+    - OctoPrint:
+        href: http://192.168.1.64:5000
+        description: OctoPrint
+        icon: https://cdn.jsdelivr.net/gh/selfhst/icons/svg/octoprint.svg
+    - Home Assistant:
+        href: http://192.168.1.125:8123
+        description: Home Assistant
+        icon: https://cdn.jsdelivr.net/gh/selfhst/icons/svg/home-assistant.svg
+- Tools:
+    - Frigate:
+        widget:
+          type: iframe
+          name: Cameras
+          src: http://192.168.1.36:5000/#Camera_3
+          classes: "h-96"
+    - Internet Speed Test:
+         href: http://192.168.1.36:8181
+         widget:
+          type: speedtest
+          url: http://192.168.1.36:8181
+          bitratePrecision: 3 # optional, default is 0 
+    - Calendar:
+        widget:
+          type: calendar
+          firstDayInWeek: sunday # optional - defaults to monday
+          view: monthly # optional - possible values monthly, agenda
+          maxEvents: 10 # optional - defaults to 10
+          showTime: true # optional - show time for event happening today - defaults to false
+          timezone: America/Chicago # optional and only when timezone is not detected properly (slightly slower performance) - force timezone for ical events (if it's the same - no change, if missing or different in ical - will be converted to this timezone)
+    - CoinMarketCap:
+        widget:
+          type: coinmarketcap
+          currency: USD # Optional
+          symbols: [BTC, ETH, DOGE]
+          key: c528c8a1-2b71-4a4e-ad69-af1318ea5e2d
+          defaultinterval: 7d # Optional
+

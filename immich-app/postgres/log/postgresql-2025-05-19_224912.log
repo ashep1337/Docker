@@ -1,0 +1,10 @@
+2025-05-19 22:49:12.656 UTC [1] LOG:  starting PostgreSQL 14.10 (Debian 14.10-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-05-19 22:49:12.656 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2025-05-19 22:49:12.656 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2025-05-19 22:49:12.660 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2025-05-19 22:49:12.666 UTC [27] LOG:  database system was shut down at 2025-05-19 22:49:30 UTC
+[2025-05-19T22:49:12Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17331".
+[2025-05-19T22:49:12Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17575".
+[2025-05-19T22:49:12Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17331/segments/b34eb099-2109-4a72-aa84-65ec6e1cb5b7".
+2025-05-19 22:49:12.679 UTC [1] LOG:  database system is ready to accept connections
+[2025-05-19T22:49:12Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17575/segments/8987bb57-510f-4527-bae5-f2f0c60b710a".

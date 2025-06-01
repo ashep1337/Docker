@@ -1,0 +1,20 @@
+2024-12-31 14:36:55.736 UTC [1] LOG:  starting PostgreSQL 14.10 (Debian 14.10-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2024-12-31 14:36:55.736 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2024-12-31 14:36:55.736 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2024-12-31 14:36:55.739 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2024-12-31 14:36:55.742 UTC [27] LOG:  database system was interrupted; last known up at 2024-12-31 10:49:18 UTC
+[2024-12-31T14:36:55Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17331".
+[2024-12-31T14:36:55Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17575".
+[2024-12-31T14:36:55Z INFO  service::utils::clean] Find directory "pg_vectors/indexes/17331/segments/4e605037-5148-45c5-972e-97af6eb945a5".
+2024-12-31 14:36:55.891 UTC [27] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-12-31 14:36:55.893 UTC [27] LOG:  redo starts at 0/1C68318
+2024-12-31 14:36:55.893 UTC [27] LOG:  invalid record length at 0/1C68400: wanted 24, got 0
+2024-12-31 14:36:55.893 UTC [27] LOG:  redo done at 0/1C683C8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2024-12-31 14:36:55.907 UTC [1] LOG:  database system is ready to accept connections
+2024-12-31 15:17:42.986 UTC [1] LOG:  received fast shutdown request
+2024-12-31 15:17:42.986 UTC [1] LOG:  aborting any active transactions
+2024-12-31 15:17:42.988 UTC [48] FATAL:  terminating connection due to administrator command
+2024-12-31 15:17:42.988 UTC [1] LOG:  background worker "logical replication launcher" (PID 46) exited with exit code 1
+2024-12-31 15:17:42.988 UTC [49] FATAL:  terminating connection due to administrator command
+2024-12-31 15:17:42.990 UTC [41] LOG:  shutting down
+2024-12-31 15:17:43.010 UTC [1] LOG:  database system is shut down

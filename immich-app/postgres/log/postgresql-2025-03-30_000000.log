@@ -1,0 +1,7 @@
+2025-03-30 19:38:45.175 UTC [1] LOG:  received fast shutdown request
+2025-03-30 19:38:45.176 UTC [1] LOG:  aborting any active transactions
+2025-03-30 19:38:45.178 UTC [47] FATAL:  terminating connection due to administrator command
+2025-03-30 19:38:45.181 UTC [1] LOG:  background worker "logical replication launcher" (PID 34) exited with exit code 1
+2025-03-30 19:38:45.181 UTC [49] FATAL:  terminating connection due to administrator command
+2025-03-30 19:38:45.184 UTC [29] LOG:  shutting down
+2025-03-30 19:38:45.213 UTC [1] LOG:  database system is shut down
